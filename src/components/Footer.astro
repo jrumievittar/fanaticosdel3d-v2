@@ -1,0 +1,36 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-gray-950">
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 class="mb-3 text-lg font-bold text-gray-900 dark:text-white">Fanáticos del 3D</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Revista digital sobre arte digital 3D. Tutoriales, noticias, cursos y más.
+        </p>
+      </div>
+      <div>
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-white">Secciones</h3>
+        <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <li><a href="/noticias" class="transition-colors hover:text-primary">Noticias 3D</a></li>
+          <li><a href="/tutoriales" class="transition-colors hover:text-primary">Tutoriales</a></li>
+          <li><a href="/cursos" class="transition-colors hover:text-primary">Cursos</a></li>
+          <li><a href="/festival" class="transition-colors hover:text-primary">F3D Film Fest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-white">Legal</h3>
+        <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <li><a href="/legal/aviso-legal" class="transition-colors hover:text-primary">Aviso Legal</a></li>
+          <li><a href="/legal/politica-de-privacidad" class="transition-colors hover:text-primary">Política de Privacidad</a></li>
+          <li><a href="/legal/politica-de-cookies" class="transition-colors hover:text-primary">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 border-t border-gray-200 pt-6 text-center text-xs text-gray-500 dark:border-gray-800 dark:text-gray-500">
+      &copy; {currentYear} Fanáticos del 3D — Jesus Rumie Vittar. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>

@@ -1,11 +1,55 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <section class="mb-16 text-center">
+    <h1 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl">
+      Bienvenido a <span class="text-primary">Fanáticos del 3D</span>
+    </h1>
+    <p class="mx-auto mb-8 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+      La revista digital sobre arte 3D. Tutoriales, noticias, cursos y todo sobre el mundo del diseño tridimensional.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/noticias" class="rounded-lg bg-primary px-6 py-3 font-medium text-white transition-colors hover:bg-primary-dark">Últimas noticias</a>
+      <a href="/tutoriales" class="rounded-lg border border-gray-300 px-6 py-3 font-medium text-gray-700 transition-colors hover:bg-gray-100 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800">Ver tutoriales</a>
+    </div>
+  </section>
+
+  <section class="mb-16">
+    <h2 class="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Secciones</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <a href="/noticias" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">Noticias 3D</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Cine, animación, tecnología e industria 3D.</p>
+      </a>
+      <a href="/ecommerce-3d" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">Ecommerce 3D</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Publicidad y comercio electrónico con 3D.</p>
+      </a>
+      <a href="/tutoriales" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">Tutoriales</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Modelado, animación, VFX y materiales.</p>
+      </a>
+      <a href="/cursos" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">Cursos</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Formación completa en arte digital 3D.</p>
+      </a>
+      <a href="/festival" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">F3D Film Fest</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Festival de cortometrajes 3D.</p>
+      </a>
+      <a href="/sobre-mi" class="group rounded-xl border border-gray-200 p-6 transition-all hover:border-primary hover:shadow-lg dark:border-gray-800">
+        <h3 class="mb-2 text-lg font-semibold text-gray-900 group-hover:text-primary dark:text-white">Sobre mí</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Conoce al creador del proyecto.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Últimos artículos</h2>
+    <div class="rounded-xl border border-dashed border-gray-300 p-12 text-center dark:border-gray-700">
+      <p class="text-gray-500 dark:text-gray-400">Próximamente — Primer artículo en camino.</p>
+    </div>
+  </section>
 </Layout>
